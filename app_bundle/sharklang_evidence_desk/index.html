@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>SharkLang Evidence Desk</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="mark">S</span><span>SHARKLANG <b>EVIDENCE DESK</b></span></div>
+    <span class="local-pill"><span class="dot"></span> LOCAL ONLY</span>
+  </header>
+  <main class="shell">
+    <section class="intro">
+      <p class="eyebrow">BUILD · ATTACK · FALSIFY · PRESERVE</p>
+      <h1>Check a release before you send it for review.</h1>
+      <p class="lead">I check ZIP structure and SHA-256 manifests on this computer. I do not run the archive or claim that its research is correct.</p>
+    </section>
+
+    <section class="panel upload-panel" aria-labelledby="upload-heading">
+      <div class="panel-heading">
+        <div><p class="step">STEP 01</p><h2 id="upload-heading">Choose a release ZIP</h2></div>
+        <span class="small-note">Up to 50 MiB</span>
+      </div>
+      <label id="drop-zone" class="drop-zone" for="zip-file">
+        <span class="upload-icon" aria-hidden="true">↑</span>
+        <span class="drop-title">Drop a ZIP here or browse</span>
+        <span class="drop-subtitle">The file is sent only to this local app. It is not extracted or executed.</span>
+        <input id="zip-file" type="file" accept=".zip,application/zip">
+      </label>
+      <div class="selected-row">
+        <span id="selected-name">No archive selected</span>
+        <button id="audit-button" class="button primary" disabled>Run local checks</button>
+      </div>
+      <p id="activity" class="activity" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="results" class="results hidden" aria-live="polite">
+      <div class="result-heading">
+        <div><p class="step">AUDIT REPORT</p><h2 id="result-name">Release archive</h2></div>
+        <span id="overall-badge" class="badge open">OPEN</span>
+      </div>
+      <div class="metrics">
+        <article class="metric"><span>Files checked</span><strong id="metric-files">0</strong></article>
+        <article class="metric"><span>Manifests found</span><strong id="metric-manifests">0</strong></article>
+        <article class="metric"><span>Credential flags</span><strong id="metric-secrets">0</strong></article>
+        <article class="metric"><span>Integrity status</span><strong id="metric-integrity">OPEN</strong></article>
+      </div>
+      <div class="report-actions">
+        <span class="small-note">The saved report includes archive filenames and stays on this computer until you choose to share it.</span>
+        <button id="save-report-button" class="button secondary" type="button">Save report JSON</button>
+      </div>
+      <div id="checks" class="checks"></div>
+      <div class="disclaimer"><strong>Scope:</strong> A matching hash confirms bytes against that manifest. It does not prove the program is safe, that tests passed, or that a theorem is correct. Test and proof replay stays OPEN.</div>
+
+      <section class="explain-box">
+        <div>
+          <p class="step">OPTIONAL · REAL GEMINI REQUEST</p>
+          <h3>Explain the result in plain English</h3>
+          <p>After you click, the app asks for your Gemini key in this terminal. I send only aggregate counts and statuses. No filenames or ZIP contents go to Gemini.</p>
+        </div>
+        <button id="explain-button" class="button secondary" disabled>Explain with Gemini</button>
+      </section>
+      <div id="explanation" class="explanation hidden"></div>
+    </section>
+
+    <footer>
+      <span>Prototype 0.1.1 · SharkLang v2.4.2</span>
+      <span>All rights reserved · Local review tool</span>
+    </footer>
+  </main>
+</body>
+</html>

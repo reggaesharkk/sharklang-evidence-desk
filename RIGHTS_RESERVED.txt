@@ -1,0 +1,7 @@
+Copyright (c) 2026 Prince Upadhyay. All rights reserved, subject to the
+narrow evaluation permission in EVALUATION_LICENSE.txt.
+
+This notice covers only original project material for which the copyright
+holder owns the relevant rights. Bundled SharkLang runtime material is covered
+by the included evaluation license. Third-party dependencies retain their own
+terms.

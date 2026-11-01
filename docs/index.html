@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A local-first tool for checking release ZIP structure, SHA-256 manifests, and selected credential patterns before review.">
+  <meta name="theme-color" content="#08131e">
+  <title>SharkLang Evidence Desk · Release review, with boundaries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="SharkLang Evidence Desk home"><span class="mark">S</span><span>SHARKLANG <b>EVIDENCE DESK</b></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#what-it-checks">How it works</a>
+      <a href="#download">Download</a>
+      <a href="#rights">Rights</a>
+      <a href="https://github.com/reggaesharkk">My GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">BUILD · ATTACK · FALSIFY · PRESERVE <span>·</span> VERSION 0.1.1</p>
+      <h1>Check the package.<br><em>Keep the claims honest.</em></h1>
+      <p class="lead">I built a local tool to inspect a release ZIP before I send it for review. It checks archive structure, SHA-256 manifests, and selected credential patterns without extracting or running the archive.</p>
+      <div class="actions" id="download">
+        <a class="button primary" href="https://raw.githubusercontent.com/reggaesharkk/sharklang-evidence-desk/main/dist/SHARKLANG_EVIDENCE_DESK_0.1.1_20261101.zip">Download app ZIP <span aria-hidden="true">↗</span></a>
+        <a class="button secondary" href="https://github.com/reggaesharkk/sharklang-evidence-desk">Browse the source</a>
+      </div>
+      <p class="micro">Runs on your computer with Python 3.10+. This is a local application, not a hosted scanning service.</p>
+    </section>
+
+    <section class="proof-strip" aria-label="Product scope">
+      <div><span>01</span><b>ZIP checks</b><small>Paths, duplicates, CRC readability</small></div>
+      <div><span>02</span><b>Hash checks</b><small>Manifest matches and omissions</small></div>
+      <div><span>03</span><b>Secret patterns</b><small>Heuristic flags in supported text</small></div>
+      <div><span>04</span><b>Local first</b><small>Archive stays on your computer</small></div>
+    </section>
+
+    <section class="content-grid" id="what-it-checks">
+      <article class="card main-card">
+        <p class="eyebrow">WHAT IT DOES</p>
+        <h2>A pre-review check, not a security verdict.</h2>
+        <p>The app reads the archive in place. It can flag unsafe paths, duplicate or case-colliding names, encrypted entries, manifest mismatches, unlisted files, and selected secret-like patterns. A report can be saved locally as JSON.</p>
+        <p>I keep test execution and mathematical proof checking marked <strong>OPEN</strong>. Matching hashes establish that bytes match a manifest; they do not show that code is safe, tests passed, or a theorem is correct.</p>
+      </article>
+      <aside class="card boundary-card">
+        <p class="eyebrow">CURRENT BOUNDARY</p>
+        <h2>What it does not do</h2>
+        <ul>
+          <li>It does not extract or execute archive contents.</li>
+          <li>It does not run a test suite or compile Lean proofs.</li>
+          <li>It cannot guarantee that secrets are absent.</li>
+          <li>It is not a production security service.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="card gemini">
+      <div><p class="eyebrow">OPTIONAL · REAL PROVIDER REQUEST</p><h2>Plain-language explanation with Gemini</h2></div>
+      <p>The local audit works without an API key. If enabled, the app sends only aggregate counts and status labels to Gemini through the bundled SharkLang request flow. It does not send the archive, file names, file contents, or detected secret values. Provider usage may be billable.</p>
+    </section>
+
+    <section class="rights" id="rights">
+      <p class="eyebrow">ACCESS &amp; LICENSING</p>
+      <h2>Review it. Ask me before deploying it.</h2>
+      <p>I make the source and release available for inspection and non-commercial evaluation under the included evaluation terms. Production or commercial use, product or service integration, and redistribution need my written permission or a separate paid license.</p>
+      <div class="actions">
+        <a class="button secondary" href="https://github.com/reggaesharkk/sharklang-evidence-desk/blob/main/EVALUATION_LICENSE.txt">Read the evaluation terms</a>
+        <a class="button secondary" href="mailto:starxshark@gmail.com?subject=SharkLang%20Evidence%20Desk%20license%20or%20collaboration">Ask about a license or project</a>
+      </div>
+      <p class="micro">Third-party and bundled runtime material remains subject to its own notices and terms. This page is not legal advice.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div><b>Prince Upadhyay</b><span>Independent researcher · India</span></div>
+    <div><a href="https://orcid.org/0009-0002-1170-4487">ORCID 0009-0002-1170-4487</a><a href="mailto:starxshark@gmail.com">Email</a></div>
+    <small>© 2026 Prince Upadhyay · All rights reserved · <a href="https://github.com/reggaesharkk/sharklang-evidence-desk">Source and release</a></small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software for non-commercial evaluation, please cite it as follows."
+title: "SharkLang Evidence Desk"
+authors:
+  - family-names: Upadhyay
+    given-names: Prince
+    orcid: "https://orcid.org/0009-0002-1170-4487"
+version: 0.1.1
+date-released: 2026-11-01
+repository-code: "https://github.com/reggaesharkk/sharklang-evidence-desk"
+type: software

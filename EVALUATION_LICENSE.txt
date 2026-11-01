@@ -1,0 +1,39 @@
+SHARKLANG EVIDENCE DESK EVALUATION LICENSE 1.0
+Copyright (c) 2026 Prince Upadhyay. All rights reserved.
+Effective date: 1 November 2026
+
+1. Limited permission
+
+The copyright holder grants each person receiving this release a limited,
+non-exclusive, non-transferable permission to view, download, retain, cite, run,
+test, and privately modify copies of author-owned project material solely for
+personal, academic, research, security-review, or other non-commercial
+evaluation. You may share factual evaluation findings that do not reproduce or
+redistribute the project material.
+
+2. Uses that require separate written permission or a paid license
+
+This evaluation permission does not allow production or operational use,
+real-world deployment, integration into a product or service, commercial use,
+providing the work or a derivative as a service, sublicensing, or distributing
+copies or modified versions of the project material. Those uses require a
+separate written license from the copyright holder; that license may be paid.
+
+3. Reserved rights and scope
+
+All rights not expressly granted in section 1 are reserved. This license
+applies only to original project material for which Prince Upadhyay owns the
+relevant rights. It does not change the separate copyright or license terms of
+third-party works, dependencies, or other material. No patent or trademark
+license is granted. Exceptions required by applicable copyright law remain
+unaffected.
+
+4. No warranty
+
+The project material is provided "as is", without warranties or conditions of
+any kind, to the extent permitted by applicable law. The copyright holder is
+not liable for claims or damages arising from its use, to the extent permitted
+by applicable law.
+
+For broader use, licensing, or commercial terms, contact the copyright holder
+before use: starxshark@gmail.com

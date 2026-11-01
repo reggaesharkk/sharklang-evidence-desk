@@ -1,0 +1,2 @@
+# sharklang-evidence-desk
+Local-first release ZIP auditor for archive paths, CRC/readability, SHA-256 manifests, and selected credential patterns. It does not extract or execute the submitted archive. Optional Gemini explanations send aggregate statuses only. Evaluation prototype; tests and proofs stay OPEN.

@@ -620,7 +620,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         server = EvidenceServer((args.host, args.port), EvidenceHandler)
     except OSError:
-        print(f"Port {args.port} is unavailable. Try: python .\\evidence_desk.py --port 8766", file=sys.stderr)
+        alternate_port = 8767 if args.port == 8766 else 8766
+        print(f"Port {args.port} is unavailable. Run the same launch command with --port {alternate_port}.", file=sys.stderr)
         return 2
     url = f"http://127.0.0.1:{server.server_port}/"
     print(f"SharkLang Evidence Desk {APP_VERSION} is running locally at {url}")

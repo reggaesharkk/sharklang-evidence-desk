@@ -22,7 +22,7 @@ Set-Location "$env:USERPROFILE\Downloads"
 python .\SHARKLANG_EVIDENCE_DESK_0.1.1_20261101.zip
 ```
 
-The app opens at `http://127.0.0.1:8765` on your computer. Choose the separate release ZIP you want to inspect. This is a local app, not the public project website. Press Ctrl+C in PowerShell to stop it. If port 8765 is already in use, extract the app ZIP and run `python .\evidence_desk.py --port 8766` from its folder.
+The app opens at `http://127.0.0.1:8765` on your computer. Choose the separate release ZIP you want to inspect. This is a local app, not the public project website. Press Ctrl+C in PowerShell to stop it. If port 8765 is already in use, run `python .\SHARKLANG_EVIDENCE_DESK_0.1.1_20261101.zip --port 8766` from the same Downloads folder.
 
 **The local audit needs no API key.** The optional Gemini explanation is a real provider request and may be billable. See [the project page](https://reggaesharkk.github.io/sharklang-evidence-desk/) for a short overview and [the evaluation terms](EVALUATION_LICENSE.txt) before use.
 
